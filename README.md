@@ -1,10 +1,10 @@
 # FarmStat: Analyzing Sensor Data for Optimal Farm Management
 
-## 1. 📌 Project Title & Short Summary
+## 1.  Project Title & Short Summary
 
 **FarmStat** is a Java application designed to process and analyze sensor data from a farm. It reads temperature readings from a CSV file, identifies and logs any data inconsistencies, calculates average temperatures per zone and day, and outputs these statistics. I built this project to gain practical experience in file I/O, data validation, object-oriented design, and implementing custom exception handling in Java.
 
-## 2. 🎯 The Problem & Goal
+## 2.  The Problem & Goal
 
 Modern agriculture increasingly relies on data to optimize operations. This project addresses the need to efficiently process raw sensor data, which can often be messy and contain errors. The primary goal was to develop a robust system that can:
 
@@ -15,7 +15,7 @@ Modern agriculture increasingly relies on data to optimize operations. This proj
 
 This project simulates a real-world scenario where accurate data processing is crucial for making informed decisions in farm management.
 
-## 3. 🛠️ How It Works (Step-by-Step Architecture)
+## 3.  How It Works (Step-by-Step Architecture)
 
 FarmStat is structured to handle data processing in a clear, modular way:
 
@@ -46,7 +46,7 @@ FarmStat is structured to handle data processing in a clear, modular way:
     *   It iterates through the `SensorReading` data, summing temperatures and counting readings for each `(date, zone)` key.
     *   **Key Design Decision**: It uses `HashMap.getOrDefault` to simplify the logic for accumulating sums and counts, avoiding null checks and making the code cleaner. The results are formatted to two decimal places.
 
-## 4. 🚀 Getting Started & Execution
+## 4.  Getting Started & Execution
 
 1.  **Compile the Java code:**
     ```bash
@@ -93,7 +93,7 @@ invalid-date,S005,ZoneD,20.0
     2023-01-17_ZoneB: 27.75
     ```
 
-## 5. 💡 Key Takeaways & What I Learned
+## 5.  Key Takeaways & What I Learned
 
 *   **Robust File I/O and Parsing**: Gained hands-on experience reading from CSV files, handling potential `FileNotFoundException`, and parsing string data into appropriate types.
 *   **Defensive Programming & Exception Handling**: Learned to anticipate and handle potential errors gracefully using custom exceptions (`SensorDataException`) and standard Java exceptions, ensuring the program remains stable even with malformed input.
