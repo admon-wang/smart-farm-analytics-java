@@ -1,0 +1,4 @@
+Line 14: Invalid Reading Date
+Line 16: Invalid Temperature
+Line 18: Invalid Temperature: -31.0
+Line 20: Invalid Temperature: 61.0
